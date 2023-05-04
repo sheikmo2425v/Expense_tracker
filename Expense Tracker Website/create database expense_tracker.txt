@@ -1,0 +1,22 @@
+user 
+    userid Name password ph email date
+inex
+   inexid userid type amount    type_of_inex  bank/cash balance  date
+
+create database expense_tracker
+create TABLE Registration(userid int AUTO_INCREMENT PRIMARY KEY, Name varchar(50), password varchar(50), Phone varchar(50),email varchar(50),date varchar(50) DEFAULT CURRENT_TIMESTAMP);
+create table inex(inexid  int AUTO_INCREMENT PRIMARY KEY, userid int ,To_name varchar(50), category varchar(50), amount int,    type_of_inex  varchar(50),  bank_cash varchar(50), balance int,  date  varchar(50) DEFAULT CURRENT_TIMESTAMP);
+   e = '''SELECT date, 
+  GROUP_CONCAT(CONCAT('[', transactions, ']') SEPARATOR ',') AS transactions
+FROM (
+  SELECT date, type_of_inex, 
+    GROUP_CONCAT(CONCAT(amount, ',', bank_cash, ',', category) SEPARATOR '],[') AS transactions
+  FROM inex
+  WHERE userid = '%s'
+  GROUP BY date, type_of_inex
+) AS t
+GROUP BY date
+ORDER BY date DESC, type_of_inex ASC LIMIT 0, 25; ''' % (
+            a["userid"])
+            create TABLE invest(id int AUTO_INCREMENT PRIMARY key, userid int,Name varchar(50),amount int,where_invest varchar(100),amount_type varchar(50), date varchar(50) DEFAULT CURRENT_DATE);
+            CREATE table invest_data(id int AUTO_INCREMENT PRIMARy key,userid int,Name varchar(50),amount int,where_invest varchar(100),date varchar(50) DEFAULT CURRENT_DATE);

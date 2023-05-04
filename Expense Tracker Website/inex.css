@@ -1,0 +1,180 @@
+.loading{
+ background-color: antiquewhite;
+
+ height: 100vh;
+ text-align: center;
+ align-items: center;
+ justify-content: center;
+
+}
+/* android */
+@media (max-width: 576px) {
+    .center{
+   
+        text-align: center;
+        align-items: center;
+    }
+    .mainbg{
+        
+        border: 2px;
+        padding: 5px;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: antiquewhite;
+        overflow: auto;
+       
+    }
+    .bor{
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+        width: 80%;
+        margin-left: 14%;
+       
+       
+    }
+    .bor2{
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+      
+        overflow: auto;
+      
+        text-align: center;
+        align-items: center;
+    
+    }
+    table{
+        width: fit-content;
+        color: aqua;
+    }
+    .bor3{
+        background-color: rgb(251, 233, 209);
+        margin-top:2% ;
+        
+        padding: 3px;
+      width: fit-content;
+        overflow: auto;
+    }
+    .bor4{
+        
+        background-color: rgba(239, 140, 11,0.5);
+        text-align: center;
+        align-items: center;
+    
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+      
+        overflow: auto;
+    }
+    .sb{
+        text-align: center;
+        align-items: center;
+        
+    }
+    .vh{
+        
+       border: 2px rgba(239, 140, 11,0.5);  
+      
+       padding: 5px;
+       overflow: auto;
+            
+
+    }
+    .l{
+        margin-left: 12%;
+    }
+    /* .in{
+        border: 2px solid black
+    } */
+	
+}
+/* pc */
+@media (min-width: 577px) {
+    
+    .center{
+   
+        text-align: center;
+        align-items: center;
+    }
+    .mainbg{
+        
+        border: 2px;
+        padding: 5px;
+        position: fixed;
+        height: 100%;
+        background-color: antiquewhite;
+        overflow: auto;
+       
+    }
+	.bor{
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+        width: 30%;
+        margin-left: 35%;
+       
+        background-color: rgb(251, 233, 209);
+    }
+    .bor2{
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+        
+        overflow: auto;
+        
+        text-align: center;
+        align-items: center;
+    
+    }
+    .bor3{
+        background-color: rgb(251, 233, 209);
+        margin-top:2% ;
+        
+        padding: 5px;
+      width: fit-content;
+        overflow: auto;
+    }
+    .bor4{
+        display: block;
+        background-color: rgba(239, 140, 11,0.5);
+        text-align: center;
+        align-items: center;
+    
+        margin-top:2% ;
+        border: solid 2px;
+        padding: 5px;
+      
+        overflow: auto;
+    }
+    .sb{
+        text-align: center;
+        align-items: center;
+        
+    }
+    .vh{
+        display: block;
+        border: 8px rgba(239, 140, 11,0.5);  
+        padding: 5px;        
+ 
+        margin-right: 33%;
+         
+         width:20%
+    }
+    .l{
+        float: right;
+    }
+    .btn_group button {
+       
+        border: 1px solid  rgba(239, 140, 11,0.5);
+       
+        padding: 10px 24px;
+        cursor: pointer; 
+       
+      }
+      
+      
+
+}
